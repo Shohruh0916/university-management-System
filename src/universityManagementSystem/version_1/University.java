@@ -1,5 +1,5 @@
 package universityManagementSystem.version_1;
 
-public class University {
+public class  University {
 
 }
