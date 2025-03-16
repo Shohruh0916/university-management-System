@@ -83,14 +83,18 @@ public class  University {
     }
 
     public String  studyPlan(int id) {
-        String s="";
-        for(int i=0; i<count1; i++){
-            if(courses[i].getId1()==courseAttendances[i].getId1()){
-                s+=courses[i].getId1()+" "+courses[i].getSubjectName()+" "+courses[i].getName()+"\n";
+        String s = "";
+        for (int i = 0; i < count2; i++) {
+            if (courseAttendances[i].getId() == id) {
+
+                for (int j = 0; j < count1; j++) {
+                    if (courses[j].getId1() == courseAttendances[i].getId1()) {
+                        s += courses[j].getId1() + "," + courses[j].getSubjectName() + " " + courses[j].getName() + "\n";
+                    }
+                }
             }
         }
+
         return s;
     }
-
-
 }
