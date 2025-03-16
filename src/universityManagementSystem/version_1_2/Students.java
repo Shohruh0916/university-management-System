@@ -1,4 +1,4 @@
-package universityManagementSystem.version_1;
+package universityManagementSystem.version_1_2;
 
 public class Students {
     private String firstName;
